@@ -1,19 +1,16 @@
 import React, { useEffect } from "react";
-import Flame from "../../assets/Home/10.png";
 import mosque from "../../assets/Home/8.png";
 import Tooly from "../../assets/Home/9.png";
 import Galaxy from "../../assets/Home/11.png";
-import Refugee from "../../assets/Home/12.png";
 import projetc from "../../assets/Home/PROJECTS.jpg"
-import projetc2 from "../../assets/Home/PROJECTS-phone.jpg"
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Project2.css";
 import siteecole from "../../assets/Home/_siteecole.pdf";
 import biblio from "../../assets/Home/biblio.pdf";
 import tchat from "../../assets/Home/tchat.pdf";
-
+import angu from '../../assets/Home/angu.jpg'
+import tache from'../../assets/Home/tache.pdf';
 
 export default function Projects() {
   useEffect(() => {
@@ -103,23 +100,23 @@ export default function Projects() {
         <br></br>
         <div className="mosque-project2">
           <div className="mosque-image2">
-            <img className="mosq" alt="tooly image" src={Tooly} />
+            <img className="mosq" alt="tooly image" src={angu} />
           </div>
           <div className="mosque-desc2">
-            <h2 className="titre-de-projet">application web,mobile et desktop pour une salle esthetique   </h2>
+            <h2 className="titre-de-projet">Un projet que j'ai fais a l'entreprise avec Angular</h2>
             <span className="desc">
-             -Le contexte c'est une application web et mobile et desktop pour une salle esthetique esthetique qui vend des produits 
-             et qui donne des rendez-vous pour ces clients . <br></br>
-             -j'ai fais le front avec le framework react js et native et pour le back le framework express (nodeJS)
+            -En se basant sur les données récupérer de l’API ci-dessous, il faudrait afficher la liste des
+employées et les informations associées dans un tableau.
+
             </span>
-            <a href="https://github.com/atef-kazdaoui/bibliov3">
+            <a href="https://github.com/atef-kazdaoui/angular-affichage.git">
               <button
 
                 className="btn primary-btn" style={{ backgroundColor: "#fe5756" }}>
                 code
               </button>
             </a>
-            <a href={biblio} >
+            <a href={tache} >
               <button className="btn highlighted-btn">description du projet</button>
             </a>
           </div>
